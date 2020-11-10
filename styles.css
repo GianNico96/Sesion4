@@ -1,71 +1,54 @@
- /*Ejercicio 1*/
- .container{ 
-
-   display: flex; 
-  /* flex-direction: ; */
-  /* flex-wrap: wrap-reverse; */
-
-  /*flex-flow:  <flex-direction> <flex-wrap> atajo*/
-
-  /* justify-content:center; */
-  /* align-items: center;  */
-  /* align-content: space-around; */
-  /* flex-flow: row wrap; */
-  width: 400px;
-  height: 400px;
-  background-color:aquamarine; 
- } 
-
-.items{
-
-  background-color:salmon ;
-  width: 40px;
-  height: 50px;
-
-} 
-
-
-/*Ejercicio 2*/
-.features{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+body{
+  font-family: 'IBM Plex Sans',Arial,sans-serif;
 }
 
-article{
-  background-color:salmon;
-  margin: 10px;
-  width: 40%;
-  height: 70px;
-
-}  
-
-/*Ejercicio 3*/
-
-.item1{grid-area: header;}
-.item2{grid-area: menu;}
-.item3{grid-area: main;}
-.item4{grid-area: right;}
-.item5{grid-area: footer;}
-
-.grid-container{
-
-  display: grid;
-  grid-template-areas:
-  'header header header header'
-  'main main right menu'
-  'footer footer footer footer'
-  ;
-
-  gap: 10px;
-  background-color:aqua;
-  padding: 10px;
+.container{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;;
 }
 
-.grid-container > div {
-  background-color: salmon;
+.titulo-principal{
+    font-weight:bold;
+    color: #025157;
+}
+
+.container-card{
+  display: flex;
+  justify-content:space-around;
+}
+
+.card-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  background-color: #fff;
+  border: 1px solid #dadada;
+  box-shadow: 0 4px 20px rgba(0,0,0,.06);
+  padding: 40px 18px;
+  border-radius: 4px;
+}
+
+img{
+  max-width: 38px;
+  height: auto;
+}
+
+.titulo-card{
+  font-size: 19px;
+  font-weight: 500;
+  font-family: 'IBM Plex Sans',Arial,sans-serif;
+  color: #343434;
+  margin-bottom: 20px;
   text-align: center;
-  color: azure;
-  padding: 20px 0;
-  font-size: 30px;
-  height: 400px;
-}  
+}
+
+.texto-card{
+    font-size: 15px;
+    color: #7e7e7e;
+    max-width: 92%;
+    margin: 0 auto;
+    text-align: center;
+}

@@ -1,71 +1,19 @@
- /*Ejercicio 1*/
- .container{ 
+ .grid-container{
+   display:grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-template-rows: repeat(2,1fr); 
+   padding: 20px;
+ }
 
-   display: flex; 
-  /* flex-direction: ; */
-  /* flex-wrap: wrap-reverse; */
+ article{
+    width: 95%;
+    height: 290px;
+    border-radius: 10px;
+    margin: 10px;
+ }
+ 
+ img{
+  max-width: 100%;
+ }
 
-  /*flex-flow:  <flex-direction> <flex-wrap> atajo*/
-
-  /* justify-content:center; */
-  /* align-items: center;  */
-  /* align-content: space-around; */
-  /* flex-flow: row wrap; */
-  width: 400px;
-  height: 400px;
-  background-color:aquamarine; 
- } 
-
-.items{
-
-  background-color:salmon ;
-  width: 40px;
-  height: 50px;
-
-} 
-
-
-/*Ejercicio 2*/
-.features{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-article{
-  background-color:salmon;
-  margin: 10px;
-  width: 40%;
-  height: 70px;
-
-}  
-
-/*Ejercicio 3*/
-
-.item1{grid-area: header;}
-.item2{grid-area: menu;}
-.item3{grid-area: main;}
-.item4{grid-area: right;}
-.item5{grid-area: footer;}
-
-.grid-container{
-
-  display: grid;
-  grid-template-areas:
-  'header header header header'
-  'main main right menu'
-  'footer footer footer footer'
-  ;
-
-  gap: 10px;
-  background-color:aqua;
-  padding: 10px;
-}
-
-.grid-container > div {
-  background-color: salmon;
-  text-align: center;
-  color: azure;
-  padding: 20px 0;
-  font-size: 30px;
-  height: 400px;
-}  
+ 
